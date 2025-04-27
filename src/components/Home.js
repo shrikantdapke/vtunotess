@@ -6,7 +6,7 @@ import { analytics } from '../firebase';
 import { logEvent } from 'firebase/analytics';
 import CommentSection from './CommentSection';
 import Calculator from './Calculator';
-
+import UploadForm from './UploadForm';
 import Contact from './Contact';
 
 
@@ -229,7 +229,7 @@ const Home = () => {
 
 
 
-
+      <UploadForm /> {/* Add the upload form here */}
 
       <Contact />
       {/* Add the comment section here */}
