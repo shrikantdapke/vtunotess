@@ -1,0 +1,128 @@
+/* Container Styling */
+.branch-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff; /* Modern white background */
+}
+
+.branch-header {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1a1a1a; /* Modern black for headings */
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+}
+
+/* Card Section */
+.branch-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.branch-card {
+  width: 320px;
+  background: #ffffff; /* Modern white background */
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #e0e0e0; /* Light gray border for subtle contrast */
+  position: relative;
+}
+
+.premium-card {
+  border: 2px solid #1e90ff; /* Modern blue for premium cards */
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.1); /* Matching shadow */
+}
+
+.premium-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(30, 144, 255, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Image Section */
+.branch-image {
+  background: linear-gradient(135deg, #1e90ff, #0077b6); /* Modern blue gradient */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.branch-content {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Tags */
+.branch-tag {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  background: #f0f0f0; /* Light gray background for tags */
+  color: #1a1a1a; /* Modern black text */
+}
+
+.premium-tag {
+  background: #1e90ff; /* Modern blue for premium tags */
+  color: #ffffff; /* White text */
+}
+
+/* Headings & Description */
+.branch-content h3 {
+  font-size: 1.4rem;
+  color: #1a1a1a; /* Modern black for headings */
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.branch-content p {
+  font-size: 0.95rem;
+  color: #666666; /* Medium gray for description */
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Meta Info */
+.branch-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #999999; /* Light gray for meta info */
+}
+
+/* Brand Tag */
+.brand-tag {
+  font-size: 0.85rem;
+  margin-top: 10px;
+  text-align: center;
+  color: #1a1a1a; /* Modern black for brand tag */
+  font-weight: bold;
+}
+
+/* Hover Animation */
+.branch-card:hover h3 {
+  color: #1e90ff; /* Modern blue on hover */
+}
+
+/* Additional Enhancements */
+.branch-card:hover {
+  transform: scale(1.05); /* Slight scale-up effect on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.branch-image {
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.branch-card:hover .branch-image {
+  background: linear-gradient(135deg, #0077b6, #1e90ff); /* Reverse gradient on hover */
+}

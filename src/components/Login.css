@@ -1,0 +1,287 @@
+.headline-messageess {
+    background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
+    color: #1b5e20;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out, slideIn 0.4s ease forwards;
+    overflow: hidden;
+}
+
+/* Marquee Wrapper to limit movement */
+.marquee-wrapper {
+    width: 70%; /* Limit the marquee container width */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden;
+}
+
+/* Marquee Text */
+.marquee-text {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+    padding-left: 1%; /* Start the animation from outside the screen */
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .headline-message {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    .marquee-text {
+        animation-duration: 20s;
+    }
+}
+
+.login-container {
+    max-width: 400px; /* Set max width for the container */
+    margin: 50px auto; /* Reduced top and bottom margin */
+    padding: 20px; /* Add padding */
+    border: 1px solid #0c0c0c; /* Add border */
+    border-radius: 8px; /* Round corners */
+    background-color: #e1dada; /* Background color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.login-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.vtu-logo {
+    display: block; /* Ensure it takes full width */
+    margin: 0 auto 20px; /* Center the logo and add space below */
+    width: 80%; /* Set a max width for the logo */
+    max-width: 200px; /* Prevent it from being too large */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin: 30px 0 20px; /* Space above and below heading */
+    color: #00796b; /* Heading color */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+    font-size: 1.8rem; /* Responsive font size */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+.input-field {
+    width: 100%; /* Ensure it takes full width */
+    padding: 10px; /* Padding for better touch targets */
+    border: 1px solid #0d0c0c; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: border-color 0.3s; /* Smooth border transition */
+    font-size: 16px; /* Consistent font size */
+    max-width: 100%; /* Prevent overflow */
+}
+
+.input-field:focus {
+    border-color: #00796b; /* Border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.login-button {
+    width: 100%; /* Full width for button */
+    padding: 12px; /* Increase padding for better touch targets */
+    background-color: #00796b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Round corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    margin-top: 10px; /* Space above the button */
+}
+
+.login-button:hover {
+    background-color: #005b4f; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.signup-option {
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Space above */
+}
+
+.signup-option a {
+    color: #00796b; /* Link color */
+    text-decoration: underline; /* Underline link */
+    transition: color 0.3s; /* Smooth color transition */
+    font-weight: bold; /* Make link bold */
+}
+
+.signup-option a:hover {
+    color: #005b4f; /* Darker shade on hover */
+}
+
+.error-message {
+    color: red; /* Red color for error message */
+    text-align: center; /* Center error message */
+    margin-bottom: 15px; /* Space below error message */
+}
+
+/* Google login button styles */
+.google-login-button {
+    width: 100%; /* Full width for button */
+    padding: 12px; /* Increase padding for better touch targets */
+    background-color: #f8f2f2; /* Google red background color */
+    color: rgb(11, 7, 7); /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Round corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    margin-top: 10px; /* Space above the button */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.google-login-button:hover {
+    background-color: #f7f0ef; /* Darker shade on hover */
+    transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+.google-logo {
+    width: 20px; /* Set width for the logo */
+    height: 20px; /* Set height for the logo */
+    margin-right: 8px; /* Space between logo and text */
+}
+/* Additional styles for centering the button container */
+.google-login-container {
+    display: flex; /* Use flexbox for the container */
+    justify-content: center; /* Center the button container */
+    margin-top: 20px; /* Space above the container */
+}
+
+.google-login-notice {
+    text-align: center; /* Center the text */
+    margin: 15px 0; /* Space around the notice */
+    font-size: 1rem; /* Base font size */
+    color: #555; /* Dark gray color for the text */
+    font-weight: 500; /* Medium weight for emphasis */
+}
+
+.google-login-notice p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Optional: Add a background or border to make it stand out */
+
+.divider {
+    text-align: center; /* Center the divider */
+    margin: 30px 0; /* Space above and below */
+    font-weight: bold; /* Bold text */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .headline-message {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .marquee-text {
+        font-size: 1rem; /* Smaller font for marquee text */
+        animation: marquee 10s linear infinite; /* Slightly faster animation */
+    }
+
+    .login-container {
+        margin: 50px 10px; /* Reduce margin on mobile */
+        padding: 15px; /* Reduce padding */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Adjust heading size for mobile */
+    }
+
+    .input-field,
+    .login-button,
+    .google-login-button {
+        font-size: 14px; /* Smaller font for mobile */
+        padding: 10px; /* Increased padding for better touch targets */
+    }
+
+    .signup-option a {
+        font-size: 14px; /* Adjust link size */
+    }
+
+    .divider {
+        font-size: 14px; /* Adjust divider size */
+    }
+}
+
+/* Additional styles for better usability */
+body {
+    font-family: 'Arial', sans-serif; /* Consistent font across the body */
+    background-color: #f7f7f7; /* Light background for contrast */
+    line-height: 1.6; /* Improved readability */
+}
+
+input[type="text"], input[type="password"] {
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Sign-up link */
+.signup-text {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.signup-link {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.signup-link:hover {
+    color: #2980b9;
+}
+.guest-login-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #10b981, #059669); /* Green gradient for guest login */
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(16, 185, 129, 0.5);
+    transition: all 0.3s ease;
+}
+
+.guest-login-button:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(5, 150, 105, 0.6);
+}
+
+.guest-login-button:disabled {
+    background: #d1d5db; /* Disabled state */
+    cursor: not-allowed;
+    box-shadow: none;
+}
