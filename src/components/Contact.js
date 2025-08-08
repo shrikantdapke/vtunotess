@@ -147,7 +147,7 @@ const Contact = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/sharad-patil-691902259"
+              href="https://www.linkedin.com/in/shrikant-dapke-1695a6314/?originalSubdomain=in"
               target="_blank"
               rel="noopener noreferrer"
             >
